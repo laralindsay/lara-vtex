@@ -1,17 +1,17 @@
 $mobile-1100: 1100px;
 $mobile-600: 600px;
 
-@mixin mobile-1100 {
-    @media (max-width: #{$mobile-1100}) {
-        @content;
-    }
-}
+// @mixin mobile-1100 {
+//     @media (max-width: #{$mobile-1100}) {
+//         @content;
+//     }
+// }
 
-@mixin mobile-600 {
-    @media (max-width: #{$mobile-600}) {
-        @content;
-    }
-}
+// @mixin mobile-600 {
+//     @media (max-width: #{$mobile-600}) {
+//         @content;
+//     }
+// }
 
 main {
     p,
@@ -25,54 +25,16 @@ main {
         display: block;
         max-width: 1280px;
         margin: 59px auto 0px;
-        border: 1px solid rgba(0, 0, 0, 0.06);
         border-bottom: 0px;
     }
 
-    .sub-topo.shortcodes-section {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        min-height: 15vw;
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-        padding: 2rem 3rem 5rem;
-        max-width: 1280px;
-        margin: 0 auto;
-
-        &:last-child {
-            box-shadow: none !important;
-        }
-    }
-
     .shortcodes-title h4 {
-        color: #e11383;
-        padding: 10px 0;
+        color: #222;
+        margin: 3rem 0 0 0;
         display: inline-block;
         font-size: 1.5rem;
-    }
-
-    .caju-shelf {
-        h2 {
-            display: none;
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            margin-top: 5rem;
-
-            @include mobile-1100 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            @include mobile-600 {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            li {
-                text-align: center;
-            }
-        }
+        text-transform: uppercase;
+        font-weight: 400;
     }
 
     .shortcodes.department-navigator .menu-departamento {
