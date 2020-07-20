@@ -1,0 +1,41 @@
+.lara-shelf {
+    h2 {
+        display: none;
+    }
+
+    ul {
+        margin-top: 5rem;
+
+        li {
+            text-align: center;
+        }
+    }
+
+    .slick-dots {
+
+
+        li {
+            width: 8px;
+            height: 8px;
+            margin-right: 8px;
+            background: #897e82;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &.slick-active {
+                background: #000;
+                transform: scale(2);
+            }
+
+            button {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
