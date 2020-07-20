@@ -21,11 +21,11 @@
 .slick-list
 {
     position: relative;
-
+    padding: 0rem 4rem 0 4rem;
     display: block;
     overflow: hidden;
 
-    margin: 0;
+    margin: -3rem 0 0 0;
     padding: 0;
 }
 .slick-list:focus
@@ -88,7 +88,8 @@
 }
 .slick-slide img
 {
-    display: block;
+    display: flex;
+    margin: 0 0 0 4rem;
 }
 .slick-slide.slick-loading img
 {
